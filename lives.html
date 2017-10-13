@@ -1,0 +1,222 @@
+<!DOCTYPE	html>
+<html>
+	<head>
+    	<meta charset="utf-8">    
+    	<title>Air Network | Lives, Stream, WebTV</title>
+		
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<script src="js/jquery.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		
+    	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"> 
+		<link href="styles/css.css" rel="stylesheet" type="text/css">
+		
+		<meta name="keywords" content="webtv, twitch, streamer, stream, streams, live, lives, rejoindre webtv, web-tv, rejoindre une webtv, rejoindre une webtv, tous les lives, communauté" />
+		<meta name="description" content="Retrouvez de nombreux lives et webTV avec des divers streamer sur Air Network." />
+		
+	</head>
+	<body class="container-fluid">
+
+		<nav class="navbar navbar-inverse navbar-fixed-top" style="width:100%" role="navigation">
+			<div class="container row">
+				<div class="navbar-header" style="margin-left: 2%; ">
+					<h1  class="nav-brand nounder"><a href="index.html">Air Network</a></h1>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#barre-de-navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+<!--Menu-->			
+					
+				
+				<div class="collapse navbar-collapse" id="barre-de-navigation" style="margin-top: 2%;">
+					<ul class="nav navbar-nav" style="margin-left: 4%;">
+						<li class="active"><a href="lives.html">LIVES</a></li>
+						<li><a href="news.html">ACTU</a></li>
+						<li><a href="contact.php">CONTACT</a></li>
+						<li><a href="newstream.php">PROPOSER SON STREAM</a></li>			
+					</ul>
+<!--RECHERCHE-->					
+
+					<a href="javascript:afficher('search');" class="icone nav navbar-nav navbar-right">
+						<img class="search"  src="images/search.png" alt="recherche"/>
+					</a>
+					<div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12" id="search" style="display:none">
+						<form role="search" name="searchform" method="get" class="row" >
+							<div class="input-group">
+								<input type="text" placeholder="recherche" class="form-control left-rounded">
+								<div class="input-group-btn">
+									<button type="submit" class="btn btn-inverse right-rounded">Chercher</button>
+								</div>
+							</div>
+						</form>
+					</div>					
+				</div>
+			</div>	
+		</nav>
+		
+<!--Titre autre live-->		
+		<div class="margetop" style="text-align:center;">
+			<hr class="hrsup" />
+			<h3>EN LIVE</h3>
+			<div class="row">
+				<div class="col-md-5"><hr class="hrinf"/> </div>
+				<div class="col-md-offset-2 col-md-5"><hr class="hrinf" /> </div>
+			</div>
+<!--Live-->		
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="stream_1">
+						<!--Javascript elment-->
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="stream_2">
+					
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="stream_3">
+					
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="stream_4">
+						
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="stream_5">
+					
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="stream_6">
+					
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="stream_7">
+						
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="stream_8">
+					
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="stream_9">
+					
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="stream_10">
+						
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="stream_11">
+					
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="stream_12">
+					
+					</div>
+				</div>
+			</div>
+			
+		
+<!--titre HORS live-->			
+			<hr class="hrsup" />
+			<h3>HORS LIVE</h3>
+			<div class="row">
+				<div class="col-md-5"><hr class="hrinf"/> </div>
+				<div class="col-md-offset-2 col-md-5"><hr class="hrinf" /> </div>
+			</div>
+			
+			
+			
+<!--HORS live-->	
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="horsstream_1">
+						<!--Javascript elment-->
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="horsstream_2">
+					
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="horsstream_3">
+					
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="horsstream_4">
+						
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="horsstream_5">
+					
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="horsstream_6">
+					
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="horsstream_7">
+						
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="horsstream_8">
+					
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="horsstream_9">
+					
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="horsstream_10">
+						
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="horsstream_11">
+					
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="horsstream_12">
+					
+					</div>
+				</div>
+			</div>
+		</div>	
+		<br /><br />
+		
+		<footer>
+			<div class="row">
+				<div class="black" style="padding-bottom:5%;">
+					<div class="container">
+						<br />
+						<h3 class="col-lg-9 col-md-9 col-sm-9 col-xs-12"> <a href="apropos.html">A propos</a> - © .Tous droits r&eacute;serv&eacute;s </h3>
+						<ul class="list-inline">
+							<li><a href="#"><img src="images/twitterwhite.png" alt="twitter" class="icone" /></a></li>
+							<li><a href="#"><img src="images/facebookwhite.png" alt="facebook" class="icone" /></a></li>
+							<li><a href="#"><img src="images/youtubewhite.png" alt="youtube" class="icone" /></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	<script>
+
+	//use pour search, 
+		function afficher(id){
+			if(document.getElementById(id).style.display=="none")
+			{
+				document.getElementById(id).style.display="block";
+			}else{
+				document.getElementById(id).style.display="none";
+			}
+			return true;
+		}
+		
+		var y=1;
+		inlive('larki9');
+		inlive('cetrico');
+		inlive('nocopyrightsounds');
+		inlive('gamekeyboxtv');
+		inlive('airnetwork');
+	
+	//use pour afficher les lives 
+		function inlive(x) {
+			$("#stream_"+y).html("<a href='streams/live_"+ x +".html'><img class='preview' src='http://static-cdn.jtvnw.net/previews-ttv/live_user_"+x+"-320x180.jpg'><div class='cadre'>" + x + "</div></a>");
+			y=y+1;
+		}
+	
+
+	
+	</script>	
+	</body>
+</html>

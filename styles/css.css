@@ -1,0 +1,213 @@
+
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+
+/************************************DEFAULT***************************************/
+.contenustream{
+	padding-top: 6%;
+}
+
+/*Lien color*/
+a{
+	color: white;
+}
+a:hover,
+a:focus {
+  color: #23527c;
+  text-decoration: none;
+}
+
+footer{
+	margin-top: 8%;
+	padding-bottom: 4%;
+	width: 100%;
+}
+
+html, body{
+	height: 100%;
+	width: 100%;
+	font-family: 'Slabo 27px', serif;
+	background-color: #F2F2F2;
+}
+
+.active{
+	color:white;
+}
+
+/************************************Menu******************************************/
+/*Recherche*/
+.search{
+	height: 30px;
+	max-width: auto;
+}
+
+h1{
+	float: left;
+}
+
+/*barre de titre */
+.hrsup{
+	margin-top: 3%;
+	margin-bottom: 0%;
+	width: 100%;
+}
+
+#planning{
+	display: none;
+}
+
+.hrinf{
+	 height: 10px;
+	 margin-top: 0%;
+	 margin-bottom: 2%;
+	 width: 90%;
+}
+
+.info{
+	background-color: #666666;
+	opacity: 1;
+}
+
+.info:hover{
+	background-color: black;
+	opacity: .5;
+}
+
+
+.icone{
+	width: 50px;
+	height: 50px;	
+}
+.icone2{
+	width: 25px;
+	height: 25px;	
+}
+
+.icone:hover, .icone2:hover{
+	opacity: .5;
+}
+
+.center{
+	text-align: center;
+}
+
+/***********************************RACCOURCIS*************************************/
+.height{
+	height: 100%;
+}
+
+/*Dimension*/
+.preview{
+	width: 100%;
+	height: auto;
+	opacity: .8;
+}
+
+.preview:hover{
+	opacity: 1;
+}
+
+.news{
+	height: 10%;
+	width: 100%;
+}
+
+
+/*BLACK*/
+.black{
+	color: white;
+	background-color:  #666666;
+	opacity: 0.8;
+	
+}
+/*Pagnination NEWS*/
+.pagination a:hover,
+.pagination .active a,
+.pagination a:focus {
+    background-color: #666666;
+    color: #ffffff;
+}
+
+.pagination .active a {
+    color: white;
+    cursor: default;
+}
+
+.pagination .active a:hover,
+.pagination .active a:focus{
+    text-decoration: none;
+    background-color: grey;
+}
+
+
+
+
+
+
+/*CADRE*/
+.cadrenews{
+	background: #666666;
+	opacity: 0.8;
+	width: 100%;
+	height: 20%;
+	text-align: center;
+	color: white;
+	font-size: 24px;
+}
+
+.cadre{
+margin-bottom: 10%;
+	background: #666666;
+	opacity: 0.8;
+	width: 100%;
+	height: 20%;
+	text-align: center;
+	color: white;
+	font-size: 24px; 
+}
+
+
+/***********************************PAGE LIVE**************************************/
+
+/*btn suivi */
+.btn-follow{
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	background-color: #666666;
+
+}
+
+.btn-follow:hover{
+	color : white;
+	background-color: grey;
+}
+
+/*****************************************AUTRE***********************************/
+
+
+/************************************Media Querry***************************************/
+.margetop{
+	padding-top: 10%;
+}
+
+@media (max-width: 768px) {
+	.margetop{
+		padding-top: 15%; 
+	}
+}
+@media (min-width: 769px) and (max-width: 992px) {
+	.margetop{
+		padding-top: 10%; 
+	}
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+	.margetop{
+		padding-top: 8%; 
+	}
+}
+@media (min-width: 1201px) {
+	.margetop{
+		padding-top: 6%; 
+	}
+}
+

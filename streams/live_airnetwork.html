@@ -1,0 +1,233 @@
+<!DOCTYPE	html>
+<html>
+	<head>
+    	<meta charset="utf-8">    
+    	<title>Air Network | WEBTV</title>
+		
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<script src="../js/jquery.js"></script>
+		<script src="../bootstrap/js/bootstrap.min.js"></script>
+		
+    	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"> 
+		<link href="../styles/css.css" rel="stylesheet" type="text/css">
+		
+		<meta name="keywords" content="webtv, twitch, streamer, stream, streams, live, lives, rejoindre webtv, web-tv, rejoindre une webtv, rejoindre une webtv" />
+		<meta name="description" content="Retrouvez de nombreux lives et webTV avec des divers streamer sur Air Network." />
+		
+	</head>
+	<body class="container-fluid">
+
+		<nav class="navbar navbar-inverse navbar-fixed-top" style="width:100%" role="navigation">
+			<div class="container row">
+				<div class="navbar-header" style="margin-left: 2%; ">
+					<h1  class="nav-brand nounder" style="float:left;"><a href="../index.html">Air Network</a></h1>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#barre-de-navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+<!--Menu-->			
+					
+				
+				<div class="collapse navbar-collapse" id="barre-de-navigation" style="margin-top: 2%;">
+					<ul class="nav navbar-nav" style="margin-left: 4%">
+						<li><a href="../lives.html">LIVES</a></li>
+						<li><a href="../news.html">ACTU</a></li>
+						<li><a href="../contact.php">CONTACT</a></li>
+						<li><a href="../newstream.php">PROPOSER SON STREAM</a></li>			
+					</ul>
+<!--RECHERCHE-->					
+
+					<a href="javascript:afficher('search');" class="icone nav navbar-nav navbar-right">
+						<img class="search"  src="../images/search.png" alt="recherche"/>
+					</a>
+					<div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12" id="search" style="display:none">
+						<form role="search" name="searchform" method="get" class="row" >
+							<div class="input-group">
+								<input type="text" placeholder="recherche" class="form-control left-rounded">
+								<div class="input-group-btn">
+									<button type="submit" class="btn btn-inverse right-rounded">Chercher</button>
+								</div>
+							</div>
+						</form>
+					</div>					
+				</div>
+			</div>	
+		</nav>
+		
+<!--Titre + Stream + Tchat-->
+	
+		<div class="row height contenustream margetop">
+			<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 height">
+				<div class="row">
+					<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+						<h4 id="emission" class="emission" style="margin-left: 2%;"> EMISSION </h4>
+					</div>
+					<h5 class="col-lg-2 col-md-2 col-sm-12 col-xs-12" id="counter"> VIEWERS : </h5>
+				</div>
+				<div  class="row height" >
+					<div id="stream" class="height" style="width: 100%;">
+						<!--javascript element-->
+					</div>
+				</div>
+			</div>	
+			<div id="tchat" class="height">
+				<!--javascript element-->
+			</div>		
+		</div>
+
+<!--Btn suivi a changer-->		
+		<div class="row">
+			<div class=" btn-group" style="width: 100%;">    
+				<button class="btn btn-follow col-lg-4 col-md-4 col-sm-4 col-xs-12" type="button" OnClick="window.location.href='https://www.twitch.tv/airnetwork'">VOIR LA CHAINE </button>
+				<button class="btn btn-follow col-lg-4 col-md-4 col-sm-4 col-xs-12" type="button" style="cursor:not-allowed" OnClick="window.location.href=''">FAIRE UN DON </button>
+				<button class="btn btn-follow col-lg-4 col-md-4 col-sm-4 col-xs-12" type="button" style="cursor:not-allowed" OnClick="window.location.href=''">S'ABONNER </button>
+			</div>
+		</div>
+		<br />
+	
+		
+<!--RESEAU STREAMER a changer-->		
+		<div class="row">
+			<ul class="list-inline" style="text-align: center">
+				<li class="col-lg-offset-1 col-lg-2"><a href="#" class="icone"><img src="../images/twitter.png" alt="twitter" class="icone" /></a></li>
+				<li class="col-lg-2"><a href="#" ><img src="../images/facebook.png" alt="facebook" class="icone" /></a></li>
+				<li class="col-lg-2"><a href="https://www.twitch.tv/airnetwork" ><img src="../images/twitch.png" alt="twitch" class="icone" /></a></li>
+				<li class="col-lg-2"><a href="#" ><img src="../images/youtube.png" alt="youtube" class="icone" /></a></li>
+				<li class="col-lg-2"><a href="airnetwork.alwaysdata.net" ><img src="../images/domain.png" alt="domain" class="icone" /></a></li>
+			</ul>
+		</div>
+
+<!-- PRESENTATION ET AGENDA-->
+		<br />
+		<div class="row" style="height: 80%;">
+			<ul class="list-inline" style="text-align: center;">
+				<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 info"><a href="javascript:afficherswitch('presentation','planning');"><h3 style="color:white;">Présentation</h3></a></li>
+				<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 info"><a href="javascript:afficherswitch('planning','presentation');"><h3 style="color:white;">Planning</h3></a></li>
+			</ul>	
+		
+			<div style="height:90%" class="container">
+				<div class="row height">			
+					<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12" id="presentation">
+						<h3>Présentation</h3>
+<!--Presentation a changer-->
+						<p>WebTV du site Air Network</p>
+					</div>
+					
+					<div id="planning" class="col-lg-8 col-md-8 col-sm-12 col-xs-12" style="height: 90%;">
+<!--Panning a changer-->
+						<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;mode=WEEK&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=ln0j90vtgs7ok1qvd9itoq7kr4%40group.calendar.google.com&amp;color=%23B1440E&amp;ctz=Europe%2FParis" style="border-width:0; width: 100%; height: 100%;" frameborder="0" scrolling="no"></iframe>
+					
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12 hidden-xs height">
+						<a class="twitter-timeline" href="https://twitter.com/ZeratoRSC2" data-widget-id="710914669779808257">Tweets de @ZeratoRSC2</a>
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+		
+		<footer>
+			<div class="row">
+				<div class="black" style="padding-bottom:5%;">
+					<div class="container">
+						<br />
+						<h3 class="col-lg-9 col-md-9 col-sm-9 col-xs-12"> <a href="../apropos.html">A propos</a> - ©Airnetwork .Tous droits r&eacute;serv&eacute;s </h3>
+						<ul class="list-inline">
+							<li><a href="#"><img src="../images/twitterwhite.png" alt="twitter" class="icone" /></a></li>
+							<li><a href="#"><img src="../images/facebookwhite.png" alt="facebook" class="icone" /></a></li>
+							<li><a href="#"><img src="../images/youtubewhite.png" alt="youtube" class="icone" /></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	<script>
+	
+	
+//afficher	
+	function afficher(id){
+		if(document.getElementById(id).style.display=="none")
+		{
+			document.getElementById(id).style.display="block";
+		}else{
+			document.getElementById(id).style.display="none";
+		}
+		return true;
+	}
+	
+		
+	function afficherswitch(id,cache){	
+			document.getElementById(id).style.display="block";
+			document.getElementById(cache).style.display="none";
+		
+		return true;
+	}
+	
+	//API twitch	
+	
+	
+// NOM a changer
+	actualize('airnetwork');
+
+	function actualize(x) {
+		$.ajax({
+			url: 'https://api.twitch.tv/kraken/channels/'+ x,
+			dataType: 'jsonp',
+			success: function(data){
+				if(data != null)
+					$("#emission").html("" + data.status + "");
+				else
+					$("#emission").html('Stream offline');
+			},
+			error: function (xhr, ajaxOptions, thrownError) {
+				$("#emission").html('');
+			}
+		});
+	
+		$.ajax({
+			url: 'https://api.twitch.tv/kraken/streams/' + x,
+			dataType: 'jsonp',
+			success: function(data){
+				if(data.stream != null)
+					$("#counter").html("Viewers : <b>" + data.stream.viewers + "</b>");
+				else
+					$("#counter").html('<span class="offline">Offline</span>');
+			},
+			error: function (xhr, ajaxOptions, thrownError) {
+				$("#counter").html('');
+			}
+		});
+	
+		$.getJSON('https://api.twitch.tv/kraken/streams/' + x, function(channel) {
+			if (channel["stream"] == null) {
+				$("#live").html("HORS live");
+			} else {
+				$("#live").html("IN live");
+			}
+		});
+		
+		$("#stream").html("<iframe src='http://player.twitch.tv/?channel="+ x +"' style='height: 90%;margin-left: 1%;' width='100%' allowfullscreen></iframe>");
+		$("#tchat").html("<iframe src='http://www.twitch.tv/" + x + "/chat?popout=' frameborder='0' scrolling='no'  class='col-lg-4 col-md-4 col-xs-12 col-sm-12 height'></iframe>");
+	}
+	//
+	
+	
+	//stock
+	
+	!function(d,s,id){
+		var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+		if(!d.getElementById(id)){
+			js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);
+		}
+	}
+	(document,"script","twitter-wjs");
+	
+	</script>
+	</body>
+
+	
+</html>
